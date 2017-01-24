@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from solver import *
 from tkinter import Tk, Frame, Canvas, Button, LEFT, ROUND
 from tkinter.filedialog import askopenfilename, asksaveasfilename
@@ -14,7 +15,6 @@ X_LIM, Y_LIM = DIM, DIM
 FILETYPES = (("pickle files", "*.pkl"), ("All files", "*.*") )
 COLORS = ["red", "tomato", "orange", "yellow", "lime green", "green", "cyan", "blue", "pink", "purple"]
 COORCNV = lambda x, y: (x, (Y_LIM-1)-y)  # convert coordinate style from math to display
-
 
 class App:
     def __init__(self, master):
@@ -170,3 +170,4 @@ if __name__ == "__main__":
     root = Tk()
     app = App(root)
     root.mainloop()
+
